@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxor to Aswan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/egypt.css">
+</head>
+
+<body class="">
+    <!-- ============================= Start ================================  -->
+    <form action="">
+        <div class="div-main pic-bg d-md-none d-block py-2">
+            <div class="container-fluid px-md-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-1 d-md-none d-block ">
+                        <div class="my-auto d-md-none d-block position-relative">
+                            <div class="dropdown">
+                                <button type="button" class="way_color" id="login-mbl"
+                                    style="background-color: transparent; border-style: none;">LOGIN</button>
+                                <div class="dropdown-menu px-3 pt-4 pb-2 sign_in_dropdown parent-class"
+                                    id="login-mbl-show">
+                                    <form action="">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="mb-3" style="color: #B38029;">Login NOW</h5>
+                                            <a class="cursor" id="close-login-mbl">
+                                                <i class=" fa-solid fa-xmark cursor" id="x-mark-m"
+                                                    style="color: #000;"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <input type="email" class="form-control mb-2" placeholder="Email">
+                                        </div>
+                                        <div>
+                                            <input type="password" class="form-control mb-4" placeholder="password">
+                                        </div>
+                                        <div>
+                                            <input type="button" class="form-control input sign_in_button mb-2"
+                                                value="Sign In">
+                                        </div>
+                                        <div>
+                                            <p class="mb-0 text-end fs-14 text-white cursor" id="reset-mbl">Forget
+                                                password</p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-div-class position-forget sign_in_dropdown2 " id="reset-mbl-show">
+                            <form action="">
+                                <div class="row px-3 pt-4 pb-2">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="brown-clr">Reset Password</h4>
+                                        <a class="cursor" id="close-reset-mbl">
+                                            <i class=" fa-solid fa-xmark cursor" style="color: #000;"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div>
+                                            <input type="email" class="form-control shadow-none" placeholder="Email">
+                                        </div>
+                                        <div class="mt-3">
+                                            <input type="button" class="form-control input sign_in_button mb-2"
+                                                value="Reset" onclick="resetForm1()" data-bs-toggle="modal"
+                                                data-bs-target="#myModal2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="new-div-class position-forget2 sign_in_dropdown2 sign_in_dropdown2b"
+                            id="reset-mbl2-show">
+                            <form action="">
+                                <div class="row px-3 pt-4 pb-2">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="brown-clr">Reset Password</h4>
+                                        <a class="cursor" id="close-reset2-mbl">
+                                            <i class=" fa-solid fa-xmark cursor" style="color: #000;"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div>
+                                            <input type="password" class="form-control shadow-none"
+                                                placeholder="New password">
+                                        </div>
+                                        <div class="mt-3">
+                                            <input type="password" class="form-control shadow-none"
+                                                placeholder="Re-enter password">
+                                        </div>
+                                        <div class="mt-3">
+                                            <input type="submit" class="form-control input sign_in_button mb-2"
+                                                value="Reset">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="my-auto">
+                            <div class="dropdown my-drop">
+                                <button type="button" class="text-white " id="register-mbl"
+                                    style="background-color: transparent; border-style: none;">REGISTER</button>
+                                <div class="dropdown-menu px-3 pt-4 pb-2 sign_in_dropdown px-4 " id="register-mbl-show">
+                                    <form action="">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="mb-3" style="color: #B38029;">Register NOW</h5>
+                                            <a id="close-register-mbl">
+                                                <i class=" fa-solid fa-xmark cursor" style="color: #000;"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control mb-2" placeholder="First name">
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control mb-2" placeholder="Last name">
+                                        </div>
+                                        <div>
+                                            <input type="tel" class="form-control mb-2" placeholder="Phone">
+                                        </div>
+                                        <div>
+                                            <input type="email" class="form-control mb-2" placeholder="Email">
+                                        </div>
+                                        <div>
+                                            <input type="password" class="form-control mb-2" placeholder="password">
+                                        </div>
+                                        <div>
+                                            <input type="password" class="form-control mb-2"
+                                                placeholder="Confirm password">
+                                        </div>
+                                        <div>
+                                            <input type="button" class="form-control input sign_in_button mb-2"
+                                                value="Register">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="d-md-none d-block">
+                            <form action="" class="search1">
+                                <input class="search__input1" type="search" placeholder="Search" id="searchInput1">
+                                <div class="search__icon-container1">
+                                    <label for="searchInput1" class="search__label1" aria-label="Search">
+                                        <svg viewBox="0 0 1000 1000" title="Search">
+                                            <path fill="currentColor"
+                                                d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z" />
+                                        </svg>
+                                    </label>
+                                    <button class="search__submit1 my-auto" aria-label="Search">
+                                        <svg viewBox="0 0 1000 1000" title="Search">
+                                            <path fill="currentColor"
+                                                d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <p class="my-auto  way_color">
+                                <a href="cart.html">
+                                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                </a>
+                                </i>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="my-auto  way_color">
+                                <a href="notification-page.html">
+                                    <i class="fa-sharp fa-solid fa-bell"></i>
+                                </a>
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-sec height-sec">
+            <div class="container-fluid gx-0">
+                <div class="yellow-bg m-0 px-md-3 px-1 align-items-center justify-content-between">
+                    <div class="">
+                        <div class="align-items-md-center flex-md-row flex-column justify-content-md-start">
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <button class="openbtn" onclick="openNav()">
+                                        <img src="./imgs/list.png" alt="" class="img-list">
+                                    </button>
+                                    <div>
+                                        <a href="./index.html" class="d-flex align-items-center text-decoration-none">
+                                            <img src="./imgs/logo_text.png" alt="logo" class="img-logo">
+                                            <p class="text-white mb-0 text-p">Liberta<span
+                                                    class="way_color">d</span>elmundo</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="nav_ul_style mb-0 position-relative">
+                                        <li class="my-auto d-md-block d-none">
+                                            <div class="dropdown">
+                                                <button type="button" class="way_color"
+                                                    style="background-color: transparent; border-style: none;"
+                                                    id="login-desktop">LOGIN</button>
+                                                <div class="dropdown-menu px-3 pt-4 pb-2 sign_in_dropdown parent"
+                                                    id="login-desktop-show">
+                                                    <form action="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-3" style="color: #B38029;">Login NOW</h5>
+                                                            <a class="cursor" id="close-login">
+                                                                <i class=" fa-solid fa-xmark cursor"
+                                                                    style="color: #000;"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <input type="email" class="form-control mb-2"
+                                                                placeholder="Email">
+                                                        </div>
+                                                        <div>
+                                                            <input type="password" class="form-control mb-4"
+                                                                placeholder="password">
+                                                        </div>
+                                                        <div>
+                                                            <input type="button"
+                                                                class="form-control input sign_in_button mb-2"
+                                                                value="Sign In">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 text-end fs-14 text-white" id="reset-desktop"
+                                                                style="cursor: pointer;">Forget password</p>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="new-div position-forget position-forgetn sign_in_dropdown2"
+                                            id="reset-desktop-show">
+                                            <form action="">
+                                                <div class="row px-3 pt-4 pb-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h4 class="brown-clr">Reset Password</h4>
+                                                        <a class="cursor" id="close-reset">
+                                                            <i class=" fa-solid fa-xmark " style="color: #000;"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div>
+                                                            <input type="email" class="form-control shadow-none"
+                                                                placeholder="Email">
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <input type="button"
+                                                                class="form-control input sign_in_button mb-2"
+                                                                value="Reset" onclick="resetForm()"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="new-div2 position-forget2 sign_in_dropdown2 sign_in_dropdown2h"
+                                            id="reset-desktop-show2">
+                                            <form action="">
+                                                <div class="row px-3 pt-4 pb-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h4 class="brown-clr">Reset Password</h4>
+                                                        <a class="cursor" id="close-reset2">
+                                                            <i class=" fa-solid fa-xmark cursor"
+                                                                style="color: #000;"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div>
+                                                            <input type="password" class="form-control shadow-none"
+                                                                placeholder="New password">
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <input type="password" class="form-control shadow-none"
+                                                                placeholder="Re-enter password">
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <input type="submit"
+                                                                class="form-control input sign_in_button mb-2"
+                                                                value="Reset">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <li class="my-auto d-md-block d-none">
+                                            <div class="dropdown my-drop">
+                                                <button type="button" class="text-white" id="register-desktop"
+                                                    style="background-color: transparent; border-style: none;">REGISTER</button>
+                                                <div class="dropdown-menu px-3 pt-4 pb-2 sign_in_dropdown px-4"
+                                                    id="register-desktop-show">
+                                                    <form action="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h5 class="mb-3" style="color: #B38029;">Register NOW</h5>
+                                                            <a class="cursor" id="close-register">
+                                                                <i class=" fa-solid fa-xmark cursor"
+                                                                    style="color: #000;"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <input type="text" class="form-control mb-2"
+                                                                placeholder="First name">
+                                                        </div>
+                                                        <div>
+                                                            <input type="text" class="form-control mb-2"
+                                                                placeholder="Last name">
+                                                        </div>
+                                                        <div>
+                                                            <input type="tel" class="form-control mb-2"
+                                                                placeholder="Phone">
+                                                        </div>
+                                                        <div>
+                                                            <input type="email" class="form-control mb-2"
+                                                                placeholder="Email">
+                                                        </div>
+                                                        <div>
+                                                            <input type="password" class="form-control mb-2"
+                                                                placeholder="password">
+                                                        </div>
+                                                        <div>
+                                                            <input type="password" class="form-control mb-2"
+                                                                placeholder="Confirm password">
+                                                        </div>
+                                                        <div>
+                                                            <input type="button"
+                                                                class="form-control input sign_in_button mb-2"
+                                                                value="Register">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="my-auto  way_color d-md-block d-none">
+                                            <a href="cart.html">
+                                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li class="my-auto  way_color d-md-block d-none">
+                                            <a href="notification-page.html">
+                                                <i class="fa-sharp fa-solid fa-bell"></i>
+                                            </a>
+                                        </li>
+                                        <div class="dropdown py-2">
+                                            <button type="button"
+                                                class="btn dropdown-toggle rounded-pill px-sm-4 px-2 py-1"
+                                                style="border: 1px solid black;" data-bs-toggle="dropdown">
+                                                English
+                                            </button>
+                                            <ul class="dropdown-menu border-dark rounded-3 golden-bg">
+                                                <li class="dropdown-item">English</li>
+                                                <li class="dropdown-item">Spanish</li>
+                                                <li class="dropdown-item">Russian</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex align-items-center d-md-block d-none my-2">
+                                            <form action="" class="search">
+                                                <input class="search__input" type="search" placeholder="Search"
+                                                    id="searchInput">
+                                                <div class="search__icon-container">
+                                                    <label for="searchInput" class="search__label" aria-label="Search">
+                                                        <svg viewBox="0 0 1000 1000" title="Search">
+                                                            <path fill="currentColor"
+                                                                d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z" />
+                                                        </svg>
+                                                    </label>
+                                                    <button class="search__submit my-auto" aria-label="Search">
+                                                        <svg viewBox="0 0 1000 1000" title="Search">
+                                                            <path fill="currentColor"
+                                                                d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- ----------------------side bar-----------------  -->
+    <section class="main-tem">
+        <div id="mySidepanel" class="sidepanel">
+            <div class="d-flex flex-column justify-content-between side-height">
+                <div class="">
+                    <div class="d-flex align-items-baseline">
+                        <a href="javascript:void(0)" class="closebtn1 pb-1" onclick="closeNav()">
+                            <img src="./imgs/list.png" alt="" class="img-list">
+                        </a>
+                        <div class="d-flex align-items-center ps-2">
+                            <div>
+                                <img src="./imgs/footer-logo.png" alt="" class="rounded-circle img-footer2">
+                            </div>
+                            <div class="">
+                                <h5 class="m-0 text-dark">Liberta
+                                    <span class="sky-clr">d</span>elmundo
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="./libert-ad.html">Why Libertad?</a>
+                        <hr class="my-1 mx-4 text-white">
+                    </div>
+                    <div>
+                        <a href="./airport-shuttle.html">Airport shuttle</a>
+                        <hr class="my-1 mx-4 text-white">
+                    </div>
+                    <div>
+                        <a href="./travel-your-way.html">Events</a>
+                        <hr class="my-1 mx-4 text-white">
+                    </div>
+                    <div>
+                        <a href="./testimonial.html">Testimonial</a>
+                        <hr class="my-1 mx-4 text-white">
+                    </div>
+                    <div>
+                        <a href="./book.html">Books to read</a>
+                        <hr class="my-1 mx-4 text-white">
+                    </div>
+                    <div>
+                        <a href="./contact-us.html">Contact us</a>
+                        <hr class="my-1 mx-4 text-white">
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <hr style="border-top: 2px solid; opacity: 1;">
+                    <div class="ms-4">
+                        <p class="mb-0 fs-12">Social Media:</p>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="https://www.tripadvisor.com/Attraction_Review-g294201-d26208912-Reviews-Libertad_Del_Mundo-Cairo_Cairo_Governorate.html"
+                                class="p-0"><img src="./imgs/owl-2.png" style="height: 40px; width: 40px;" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=100090555392220" class="p-0"><img
+                                    src="./imgs/fb-2.png" style="height: 40px; width: 40px;" alt=""></a>
+                            <a href="mailto:info@libertadelmundo.com" class="p-0"><img src="./imgs/google-plus2.png"
+                                    style="height: 40px; width: 40px;" alt=""></a>
+                            <a href="mailto:info@libertadelmundo.com" class="p-0"><img src="./imgs/youtube2.png"
+                                    style="height: 40px; width: 40px;" alt=""></a>
+                            <a href="https://www.instagram.com/libertadelmundoofficial/?next=%2F" class="p-0"><img
+                                    src="./imgs/insta2.png" style="height: 40px; width: 40px;" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="right-content fix_div cyan-bg py-5">
+            <div class="container">
+                <div class="main-border py-2 d-flex align-items-center gap-2">
+                    <div>
+                        <a href="./luxor-to-aswan-tour.html" class="text-decoration-none">
+                            <i class="bi bi-arrow-left text-dark sky-light pb-2 pt-1 px-2 rounded-2"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <p class="text-white m-0 font-22">Tours</p>
+                        <i class="bi bi-chevron-right text-white"></i>
+                        <p class="text-white m-0 font-22">Luxor to Aswan city</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <img src="./imgs/IMG_2.jpg" alt="" class="img-tree rounded-4">
+                    </div>
+                    <div class="col-lg-6 py-3 px-4">
+                        <p class="text-white">Luxor to Aswan</p>
+                        <div class="row align-items-center">
+                            <div class="col-sm-6 col-lg-12 col-xl-6 d-flex align-items-center gap-4 border-tb py-2 max">
+                                <a href="#" class="d-flex align-items-center text text-decoration-none gap-2">
+                                    <i class="bi bi-share border-golden rounded-circle px-2 py-1 golden-clr"></i>
+                                    <p class="m-0 text-white">Share</p>
+                                </a>
+                                <a href="#" class="d-flex align-items-center text text-decoration-none gap-2">
+                                    <i class="bi bi-plus border-golden rounded-circle px-2 py-1 golden-clr"></i>
+                                    <p class="m-0 text-white">Add Story</p>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-12 col-xl-6 mt-sm-0">
+                                <div class="text-sm-end text-lg-start text-xl-end">
+                                    <button type="button" class="d-inline-block mt-3 mt-sm-0 mt-lg-3 mt-xl-0 rate-button" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        Rate &
+                                        Review
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p class="text-white">
+                                The tour starts at 8 am, you will visit the Giza Pyramids, the Great pyramid of Khufu,
+                                the pyramid of Khafre, explore Khafre’s impressive valley temple and the sphinx. After
+                                lunch you head to Memphis - the capital of ancient Egypt- for visiting the Ruins of
+                                Memphis; the colossus of Ramesses the Great, and the Imhotep Museum. Then head to
+                                Sakkara to visit the step pyramid of king Dojser, explore the well preserved old Kinwe,
+                                the pyramid of king Tety and descend into the burial chamber to see the famous pyramid
+                                texts and tombs of the noble pharaohs.
+                            </p>
+                            <div>
+                                <h6 class="golden-clr mb-0">Sightseeing</h6>
+                                <h6 class="golden-clr mb-0">Luxor</h6>
+                                <ul>
+                                    <li class="text-white">Valley of the Kings.</li>
+                                    <li class="text-white">The Temple of Hatshepsut</li>
+                                    <li class="text-white">The Colossi of Memnon</li>
+                                    <li class="text-white">Temple of Edfu</li>
+                                    <li class="text-white">Kom Ombo Temple</li>
+                                </ul>
+                                <h6 class="golden-clr mb-0">Aswan</h6>
+                                <ul>
+                                    <li class="text-white">Temple of Philae.</li>
+                                    <li class="text-white">Aswan High dam.</li>
+                                </ul>
+                                <h6 class="golden-clr mb-0">Optional</h6>
+                                <ul>
+                                    <li class="text-white">Abu Simbel Temple</li>
+                                    <li class="text-white">Nubian Village</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 class="golden-clr mb-0">Include</h6>
+                                <ul>
+                                    <li class="text-white">Enterance fees to all the mentioned sites.</li>
+                                    <li class="text-white">Professional Egyptologist Multilingual tour guide during your
+                                        trip.</li>
+                                    <li class="text-white">Breakfast, and Lunch.</li>
+                                    <li class="text-white">Mineral water on board the vehicle during the tours.</li>
+                                    <li class="text-white">Private vehicles, modern, air-conditioned.</li>
+                                    <li class="text-white">4wd car tour.</li>
+                                    <li class="text-white">One night camping in the desert.</li>
+                                    <li class="text-white">Camping equipment.</li>
+                                    <li class="text-white">All service charges and taxes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="button_border rounded-pill">
+                                <button type="button" class="button_leniar_style px-5 rounded-pill "
+                                    data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mx-sm-0 mx-2">
+                    <h5 class="text-white">Photos and gallery</h5>
+                    <div class="col site-bg rounded-4 px-4 py-3 mt-4">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-3">
+                                <img src="./imgs/IMG_1.jpg" alt="" class="img-fluid rounded-4">
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-3">
+                                <img src="./imgs/IMG_2.jpg" alt="" class="img-fluid rounded-4">
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-3">
+                                <img src="./imgs/IMG_6.jpg" alt="" class="img-fluid rounded-4">
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-3">
+                                <img src="./imgs/IMG_4.jpg" alt="" class="img-fluid rounded-4">
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-3">
+                                <img src="./imgs/IMG_7.jpg" alt="" class="img-fluid rounded-4">
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-3">
+                                <img src="./imgs/IMG_8.jpeg" alt="" class="img-fluid rounded-4">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="sky-light py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-11 mx-auto">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <div>
+                                    <img src="./imgs/footer-logo.png" alt="" class="rounded-circle img-footer">
+                                </div>
+                                <div>
+                                    <h4 class="m-0">Liberta<span class="sky-clr">d</span>elmundo</h4>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="mb-0">
+                                    The word “Libertad” means “freedom” in Spanish, and so we are willing to change the
+                                    concept of traveling by offering our visitors the opportunity to discover our land
+                                    in his/her way:
+                                    “Libertad- Travel your way”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex justify-content-md-end mt-md-0 mt-3">
+                            <div>
+                                <div>
+                                    <h5>Social Media:</h5>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <a href="https://www.tripadvisor.com/Attraction_Review-g294201-d26208912-Reviews-Libertad_Del_Mundo-Cairo_Cairo_Governorate.html"
+                                        class="p-0"><img src="./imgs/owl-2.png" style="height: 40px; width: 40px;"
+                                            alt=""></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100090555392220" class="p-0"><img
+                                            src="./imgs/fb-2.png" style="height: 40px; width: 40px;" alt=""></a>
+                                    <a href="mailto:info@libertadelmundo.com" class="p-0"><img
+                                            src="./imgs/google-plus2.png" style="height: 40px; width: 40px;" alt=""></a>
+                                    <a href="mailto:info@libertadelmundo.com" class="p-0"><img src="./imgs/youtube2.png"
+                                            style="height: 40px; width: 40px;" alt=""></a>
+                                    <a href="https://www.instagram.com/libertadelmundoofficial/?next=%2F"
+                                        class="p-0"><img src="./imgs/insta2.png" style="height: 40px; width: 40px;"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-booking">
+            <div class="modal-content light-bground py-3 rounded-4">
+                <div class="modal-header border-0 pt-0 px-5">
+                    <h1 class="modal-title fs-5 brown-clr">Rate & Review</h1>
+                </div>
+                <div class="modal-body pt-0 px-5">
+                    <form action="">
+                        <div>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5"></label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4"></label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3"></label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2"></label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1"></label>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <textarea class="myInput" placeholder="Write" rows="3"></textarea>
+                        </div>
+                        <div class="mt-3">
+                            <button type="submit" class="mybutton button_border rounded-pill px-5 py-2">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content px-2 light-bground">
+                <div class="py-3 border_golden">
+                    <h4 class="modal-title text-center">Reset Password</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa-solid fa-check rounded-circle mybutton" style="padding: 12px 14px;"></i>
+                    <h4>Email</h4>
+                    <p>An email is sent to your email address. click
+                        <br> on the link to reset your password.
+                    </p>
+                    <button type="button" class="mybutton unique border-0 rounded-pill close-modal-button min-w py-2"
+                        data-bs-dismiss="modal">Close
+                        <i style="float: right;" class="bi bi-x rounded-circle px-1 text-end text-white bg-dark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content px-2 light-bground">
+                <div class="py-3 border_golden">
+                    <h4 class="modal-title text-center">Reset Password</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa-solid fa-check rounded-circle mybutton" style="padding: 12px 14px;"></i>
+                    <h4>Email</h4>
+                    <p>An email is sent to your email address. click
+                        <br> on the link to reset your password.
+                    </p>
+                    <button type="button"
+                        class="mybutton unique border-0 rounded-pill close-modal-button1 min-w py-2 web-reset"
+                        data-bs-dismiss="modal">Close
+                        <i style="float: right;" class="bi bi-x rounded-circle px-1 text-end text-white bg-dark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-booking modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Reservation</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="">
+                            <label for="" class="font-12">Select the date</label>
+                            <input type="date" class="form-control shadow-none font-12" placeholder="date">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Select time</label>
+                            <input type="time" class="form-control shadow-none font-12" placeholder="time">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">No. of people</label>
+                            <input type="number" class="form-control shadow-none font-12" placeholder="12">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Total Price</label>
+                            <input type="number" class="form-control shadow-none font-12" placeholder="12$">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                        class="btn mybutton px-4 border-0 rounded-pill">Continue with my booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Booking Data</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <h6 class="fw-bold ">Enter your details</h6>
+                        <div class="">
+                            <label for="" class="font-12">First Name</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="First Name">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Family Name</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="Family Name">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Nationality</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="Nationality">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Email</label>
+                            <input type="email" class="form-control shadow-none font-12" placeholder="Email">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Confirm Email</label>
+                            <input type="email" class="form-control shadow-none font-12" placeholder="Confirm Email">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Phone Number</label>
+                            <input type="tel" class="form-control shadow-none font-12" placeholder="Phone Number">
+                        </div>
+                        <div class="mt-2">
+                            <div class="d-flex flex-column">
+                                <span for="" class="font-12">
+                                    Passport Copy/ID for Egyptians
+                                </span>
+                                <label for="myImg2">
+                                    <img id="blah2" src="./imgs/add_profile.png" alt="" class="profile-img">
+                                </label>
+                                <input type="file" name="img" class="d-none" id="myImg2" onchange="readURL(this);">
+                            </div>
+                        </div>
+                        <h6 class="fw-bold mt-3">Travellers Detail</h6>
+                        <h6>Traveller 1</h6>
+                        <div class="">
+                            <label for="" class="font-12">First Name</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="First Name">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Family Name</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="Family Name">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Date of Birth</label>
+                            <input type="date" class="form-control shadow-none font-12" placeholder="Nationality">
+                        </div>
+                        <div class="mt-2">
+                            <div class="d-flex flex-column">
+                                <span for="" class="font-12">
+                                    Passport Copy/ID for Egyptians
+                                </span>
+                                <label for="myImg2">
+                                    <img id="blah2" src="./imgs/add_profile.png" alt="" class="profile-img">
+                                </label>
+                                <input type="file" name="img" class="d-none" id="myImg2" onchange="readURL(this);">
+                            </div>
+                        </div>
+                        <h6>Traveller 2</h6>
+                        <div class="">
+                            <label for="" class="font-12">First Name</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="First Name">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Family Name</label>
+                            <input type="text" class="form-control shadow-none font-12" placeholder="Family Name">
+                        </div>
+                        <div class="">
+                            <label for="" class="font-12">Date of Birth</label>
+                            <input type="date" class="form-control shadow-none font-12" placeholder="Nationality">
+                        </div>
+                        <div class="mt-2">
+                            <div class="d-flex flex-column">
+                                <span class="font-12">
+                                    Passport Copy/ID for Egyptians
+                                </span>
+                                <label for="myImg2">
+                                    <img id="blah2" src="./imgs/add_profile.png" alt="" class="profile-img">
+                                </label>
+                                <input type="file" name="img" class="d-none" id="myImg2" onchange="readURL(this);">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"
+                        class="btn mybutton px-4 border-0 rounded-pill">Confirm my Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Summary</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <h6 class="fw-bold">Tour data</h6>
+                        <div class="">
+                            <h6>Tour Name</h6>
+                            <p>Alexandria</p>
+                        </div>
+                        <div class="">
+                            <h6>Cities</h6>
+                            <p>Alexandria, Siwa</p>
+                        </div>
+                        <div class="">
+                            <h6>Tour duration</h6>
+                            <p>2 days</p>
+                        </div>
+                        <div class="">
+                            <h6>Date</h6>
+                            <p>12/12/23</p>
+                        </div>
+                        <div class="">
+                            <h6>No. of people</h6>
+                            <p>12</p>
+                        </div>
+                        <h6 class="fw-bold">Total Price</h6>
+                        <p>120$</p>
+                        <h6>Terms $ Conditions/Cancellation policy</h6>
+                        <div class="d-flex align-items-start">
+                            <input type="checkbox" class="me-2 mt-2">
+                            <label for="" class="font-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+                                deserunt sed repudiandae doloribus quod accusantium cumque consectetur omnis
+                                laboriosam.label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                        class="btn mybutton px-4 border-0 rounded-pill">Continue & Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel4">Payment methods</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row d-flex align-items-center justify-content-between px-3">
+                            <div class="col-6 form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Credit Card
+                                </label>
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center justify-content-end">
+                                <img class="payment-logos" src="./imgs/VISA-Logo-2014.png" alt="">
+                                <img class="payment-logos" src="./imgs/Mastercard-Logo.png" alt="">
+                                <img class="payment-logos" src="./imgs/Emex-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div id="has" style="display: block;">
+
+
+                            <div class="mt-3">
+                                <input type="number" class="form-control shadow-none" placeholder="Card number">
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" name="" id="flexRadioDefault1" class="form-control shadow-none"
+                                    placeholder="Cardholder name">
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" id="monthYearInput" class="form-control shadow-none"
+                                    placeholder="MM/YYYY" maxlength="7" pattern="\d{2}/\d{4}"
+                                    title="Please enter a valid Month/Year (MM/YYYY)">
+                            </div>
+                            <div class="mt-3">
+                                <input type="text" class="form-control shadow-none" placeholder="CCV">
+                            </div>
+                        </div>
+                        <div class="mt-3 form-check">
+                            <input class=" form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <img class="w-25" src="./imgs/paypal-logo-png-16.png" alt="">
+                            </label>
+                        </div>
+
+                        <div class="mt-3 ps-4 d-flex align-items-center">
+                            <img class="payment-logoslast" src="./imgs/VISA-Logo-2014.png" alt="">
+                            <img class="payment-logoslast" src="./imgs/Mastercard-Logo.png" alt="">
+                            <img class="payment-logoslast" src="./imgs/Emex-logo.png" alt="">
+                        </div>
+                        <div id="asd" style="display: none;">
+                            <div class="mt-3">
+                                <label for="">Email</label>
+                                <input type="text" name="" id="" class="form-control shadow-none" placeholder="Email">
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Password</label>
+                                <input type="password" class="text-dark form-control shadow-none"
+                                    placeholder="Password">
+                            </div>
+                            <div class="text-center mt-3">
+                                <input type="submit" value="Login" class="golden-bg border-0 rounded-pill px-3 py-2">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle6 "
+                        class="btn mybutton px-4 border-0 rounded-pill">Pay Secure</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel5">Summary</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <label for="" class="fw-semibold">Product description</label>
+                            <p class="shadow-none font-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vivamus ac odio ac justo facilisis fringilla ac eu justo.</p>
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="fw-semibold">Qty</label>
+                            <p class="shadow-none font-12">4</p>
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="fw-semibold">Receipt No.</label>
+                            <p class="shadow-none font-12">200</p>
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="fw-semibold">Date Paid</label>
+                            <p class="shadow-none font-12">8/18/2023</p>
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="fw-semibold">Payment Method</label>
+                            <p class="shadow-none font-12">PayPal</p>
+                        </div>
+                        <div>
+                            <label for="" class="w-100 fw-semibold">Logo</label>
+                            <img class="w-25" src="./imgs/logo_text.png" alt="">
+                            <p class="d-flex">Liberta<span class="way_color">d</span>elmundo</p>
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="fw-semibold">Person name</label>
+                            <p class="shadow-none font-12">Ashir Ali Bhalli</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-toggle="modal" aria-label="Close"
+                        class="btn mybutton px-4 border-0 rounded-pill">Send Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon">
+        <a href="https://api.whatsapp.com/send?phone=">
+            <img src="./imgs/whatsapp.png" alt="Sticky Icon" class="whatsapp-img">
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d538a6750.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
